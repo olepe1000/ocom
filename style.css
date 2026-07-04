@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+header{
+    position: relative;
+}
+.header-top{
+    background: #2d2f4b;
+    display: flex;
+    justify-content: center;
+    color: #ffff;
+    height: 50px;
+}
+.header-top-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-top-icone{
+    color: #f76f01;
+    padding: 10px;
+    border-right: 1px solid #ffff;
+}
+.header-top-text{
+    margin: 15px;
+}
+.header-top-text span{
+    color: #f76f01;
+    font-size: 0.7rem;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+}
+nav{
+    height: 85vh;
+    width: 100%;
+    background: linear-gradient(rgba(32,3,3,0.602), rgba(32,3,3,0.52)),
+    url(photos/samsungS.jpg)center/cover;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ffff;
+    padding-bottom: 12px;
+}
+.logo{
+    margin-top: 10px;
+}
+.logo a{
+    font-size: 1.3rem;
+    color: #ffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+}
+.logo a span{
+    font-weight: bold;
+    color: #f76f01;
+}
+
+
+.nav-item{
+    display: flex;
+}
+.link{
+    margin-left: 15px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background: #f76f01;
+    padding: 10px;
+    border-radius: 10px;
+}
+.link:hover{
+    background: linear-gradient(to left bottom,
+    rgba(241,82,8,0.918)),
+    rgba(216,71,14,0.753);
+}
+.link a{
+    color: #ffff;
+}
+.menu-icons{
+    display: flex;
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+.menu-icons a{
+    color: #ffff;
+    margin-left: 15px;
+}
+
+.header-contenu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.header-contenu h3{
+    font-size: 1.8rem;
+    color: #ffff;
+    font-weight: bold;
+    animation-name: moveintoleft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 10px;
+}
+@keyframes moveintoleft{
+    0%{
+        opacity: 0;
+        transform: translate(-100px);
+    }
+    80%{
+        transform: translate(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+   
+}
+
+.header-contenu h1{
+    font-size: 2rem;
+    color: #ffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    animation-name: moveintoright;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 10px;
+}
+.header-contenu p{
+    color: #ffff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+@keyframes moveintoright{
+    0%{
+        opacity: 0;
+        transform: translate(100px);
+    }
+    80%{
+        transform: translate(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+   
+}
+
+.header-contenu .btn,
+.btn2 {
+    padding: 10px;
+    background: transparent;
+}
+.header-contenu .btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 100px;
+    padding: 15px 40px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.2s;
+    border: none;
+    outline: none;
+}
+.header-contenu .btn2{
+    border: solid 2px #ffff;
+    transition: ease-in-out;
+}
+.header-contenu .btn1{
+    border: solid 2px #ffff;
+    transition: ease-in-out;
+}
+.header-contenu .btn1:hover{
+    background: #f76f01;
+    color: #ffff;
+}
+.header-contenu .btn2:hover{
+    background: #130683;
+    color: #ffff;
+}
+.header-contenu a{
+    color: #ffff;
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+   
+}
+@medmia only screen and (max-width: 600px){
+    .header-contenu h1{
+        font-size: 1.4rem;
+    }
+    .header-contenu h1{
+        font-weight: 1.2rem;
+    }
+    .header-contenu .btn{
+        text-transform: uppercase;
+        font-size: 0.7rem;
+    }
+}
+footer{
+    background: #2d2f4b;
+    color: #ffff;
+    text-align: center;
+    padding: 10px;
+}
