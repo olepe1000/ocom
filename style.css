@@ -15,9 +15,12 @@ li{
 header{
     position: relative;
 }
+
+
 .header-top{
     background: #2d2f4b;
     display: flex;
+    gap: 30px;
     justify-content: center;
     color: #ffff;
     height: 50px;
@@ -49,6 +52,7 @@ nav{
 }
 .menu{
     display: flex;
+    gap: 30px;
     justify-content: space-around;
     border-bottom: 1px solid #ffff;
     padding-bottom: 12px;
@@ -202,6 +206,7 @@ nav{
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
    
 }
+
 @media only screen and (max-width: 600px){
     .header-contenu h1{
         font-size: 1.4rem;
@@ -339,15 +344,76 @@ hr {
     background: #efebcd;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    padding-bottom: 1rem;
+    grid-gap: 1rem;
 }
 
 .v-uniq img{
     width: 100%;
     grid-column: 1/-1;
     grid-row: 1/2;
+
 }
-.v-header2 img{
+.v-nom{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background: #f76f01;
+    color: #ffff;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    width: 80%;
+    transform: translateY(50%);
+    justify-self: center;
+    align-self: end;
+    padding: 0.2rem;
+    font-size: 1rem;
+
+}
+.detail-produit,.detail-produit1{
+    margin-top: 1rem;
+}
+.detail-produit,.detail-produit1,.detail-produit2,.detail-produit3,
+.detail-produit4,.detail-produit5{
+    font-size: 0.8rem;
+    margin-left: 2rem;
+    display: flex;
+    opacity: 0.7;
+    align-items: center;
+}
+.detail-produit i,.detail-produit1 i,.detail-produit2 i,.detail-produit3 i,
+.detail-produit4 i,.detail-produit5 i{
+    margin-left: 1rem;
+    padding-right: 1rem;
+
+}
+.prix{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    margin-left: 2px;
+
+}
+.prix-btn{
+    font-size: 0.8rem;
+    font-family: 'Lobster',cursive;
+    font-weight: 400;
+    color: #2d2f4b;
+    font-style: italic;
+}
+.prix-btn span{
+    color: #e45a04;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.btn-acheter{
+    background: #e45a04;
+    padding: 10px 20px;
+    color: #ffff;
+    font-size: 1.2rem;
 }
 
 
