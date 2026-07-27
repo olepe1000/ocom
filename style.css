@@ -207,16 +207,114 @@ nav{
    
 }
 
-@media only screen and (max-width: 600px){
-    .header-contenu h1{
-        font-size: 1.4rem;
+@media only screen and (max-width: 768px){
+    .header-top{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 12px 10px;
+        gap: 10px;
+    }
+    .header-top-article{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .header-top-text{
+        margin: 0 10px;
+    }
+    nav{
+        height: auto;
+        min-height: 70vh;
+        padding-bottom: 24px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    .nav-item{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .link{
+        margin: 5px 0;
+    }
+    .menu-icons{
+        justify-content: center;
+        margin-top: 0;
+    }
+    .header-contenu{
+        width: 90%;
+        padding: 0 10px;
+    }
+    .header-contenu h3{
+        font-size: 1.2rem;
     }
     .header-contenu h1{
-        font-weight: 1.2rem;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+    }
+    .header-contenu p{
+        font-size: 0.95rem;
     }
     .header-contenu .btn{
-        text-transform: uppercase;
-        font-size: 0.7rem;
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+        font-size: 0.85rem;
+        padding: 12px 20px;
+    }
+    .categorie-boite{
+        width: 90%;
+        flex-direction: column;
+    }
+    .categorie-unique{
+        flex-basis: 100%;
+    }
+    .section-elements{
+        width: 92%;
+    }
+    .v-header2{
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .v-uniq{
+        grid-template-columns: 1fr;
+    }
+    .v-nom{
+        width: 90%;
+    }
+    .detail-produit, .detail-produit1, .detail-produit2, .detail-produit3,
+    .detail-produit4, .detail-produit5{
+        margin-left: 1rem;
+    }
+    .prix{
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+        text-align: center;
+    }
+    .btn-acheter{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .header-top-text h6{
+        font-size: 0.8rem;
+    }
+    .link{
+        width: 100%;
+        text-align: center;
+    }
+    .menu-icons{
+        font-size: 1.2rem;
+    }
+    .header-contenu h1{
+        font-size: 1.3rem;
+    }
+    .header-contenu h3{
+        font-size: 1rem;
     }
 }
 
