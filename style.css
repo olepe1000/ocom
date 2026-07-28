@@ -6,6 +6,18 @@
     margin: 0;
     box-sizing: border-box;
 }
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 a{
     text-decoration: none;
 }
